@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Rostyk",
+            "email": "rostyk@gmail.com",
+            "password": "123aerh"
+        },
+        {
+            "id": 2,
+            "name": "Rostyk",
+            "email": "Koval.2020@edu.lpnu.ua",
+            "password": "111"
+        }
+    ]
+}

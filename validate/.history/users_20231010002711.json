@@ -1,0 +1,12 @@
+{
+    "users": {
+        "id": 1,
+        "name": "Rostyk",
+        "email": "Software Developer",
+        "password": 75000,
+        "skills": ["JavaScript", "React", "Node.js"]
+    },
+    "company": "ABC Software Inc",
+    "location": "New York"
+}
+      

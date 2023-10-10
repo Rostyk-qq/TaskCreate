@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Rostyk",
+            "email": "rostyk@gmail.com",
+            "password": "123aerh"
+        },
+        {
+            "id": 2,
+            "name": "Oleg",
+            "email": "Oleg@edu.lpnu.ua",
+            "password": "111"
+        },
+        {
+            "id": 3,
+            "name": "Oleg",
+            "email": "OlegOlegovich@gmail.com",
+            "password": "1111"
+        },
+        {
+            "id": 4,
+            "name": "Anatolio",
+            "email": "Anatolio@gmail.com",
+            "password": "1111"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+.input{
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #111;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: all;
+}
+.input:sele
+.input::placeholder{
+    text-transform: uppercase;
+}

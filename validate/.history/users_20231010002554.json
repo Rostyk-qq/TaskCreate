@@ -1,0 +1,12 @@
+{
+        "employee": {
+          "id": 12345,
+          "name": "John Doe",
+          "position": "Software Developer",
+    "salary": 75000,
+    "skills": ["JavaScript", "React", "Node.js"]
+    },
+    "company": "ABC Software Inc",
+    "location": "New York"
+}
+      

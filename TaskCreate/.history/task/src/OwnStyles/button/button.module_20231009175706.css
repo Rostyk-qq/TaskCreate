@@ -1,0 +1,10 @@
+.button {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: -5px -5px 10px #111;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    user-select: none;
+    pointer
+}

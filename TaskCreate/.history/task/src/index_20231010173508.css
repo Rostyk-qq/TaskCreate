@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aliceblue;
+    overflow: auto;  
+}
+.area__box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(61, 60, 60);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: clamp(300px, 40vw, 500px);
+}
+.area__box h1{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.area__box form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.area__box form input{
+    width: 100%;
+    box-sizing:border-box;
+}
+.area__box form > *{
+    margin: 10px 0px;
+}
+.input{
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #111;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: all;
+}
+.input:focus{
+    border-bottom: 1.5px solid #29dbe4;
+}
+.input::placeholder{
+    text-transform: uppercase;
+}
+
+.button {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: -5px -5px 10px #111;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    user-select: none;
+    pointer-events: all;
+    border: none;
+    transition: all 1s ease;
+}
+.button:hover{
+    background-color: rgb(44, 52, 58);
+    color: aliceblue;
+    transition: all 1s ease;
+}
+
+.users__posts{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    background-color: rgb(123, 167, 206);
+}
+.posts__container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.container__post{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid aqua;
+    background-color: transparent;
+}
+.post{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+}
+.post__left-side{
+    width: 50%;
+}
+.post__right-side{
+    width: 50%;
+}

@@ -1,0 +1,3 @@
+enum PagesPath {
+    registr
+}

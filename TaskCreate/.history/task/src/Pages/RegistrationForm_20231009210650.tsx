@@ -1,0 +1,35 @@
+import { useState } from "react"
+import { TypedUseSelector } from "../Redux/TypeSelector/selector"
+import { actionsCreators } from "../Redux/Reducers/ActionCreators"
+import { AppDispatch } from "../Redux/store"
+import {useDispatch} from 'react-redux'
+import React from "react"
+const RegistrationForm = () => {
+    const {id, name, lastName, email, password, passwordSubmit} = TypedUseSelector(state => state.UserReducer);
+    const [params, setParams] = useState({name: '', lastName: '', email: '', password: '', passwordSubmit: ''})
+    const dispatch = useDispatch<AppDispatch>()
+    
+    const StoreParams = (e: any) => {
+        e.preventDefault()
+        dispatch(actionsCreators.CreatorName(params.name));
+        dispatch(actionsCreators.CreatorLastName(params.lastName));
+        dispatch(actionsCreators.CreatorLastName(params.lastName));
+        dispatch(actionsCreators.CreatorEmail(params.email));
+        dispatch(actionsCreators.CreatorPassword(params.password));
+        dispatch(actionsCreators.CreatorSubmitPassword(params.passwordSubmit));
+    }
+    console.log(name, lastName, email, password, passwordSubmit);
+    return (
+        <form>
+            <input value={params.name} onChange={e => setParams({...params, name: e.target.value})} className="input" name='name' placeholder='Name' />
+            <input value={params.lastName} onChange={e => setParams({...params, lastName: e.target.value})} className="input" name='lastName' placeholder='LastName' />
+            <input value={params.email} onChange={e => setParams({...params, email: e.target.value})} className="input" name='email' placeholder='Email' />
+            <input value={params.password} onChange={e => setParams({...params, password: e.target.value})} className="input" name='password' placeholder='Password' />
+            <input value={params.passwordSubmit} onChange={e => setParams({...params, passwordSubmit: e.target.value})} className="input" name="passwordSubmit" placeholder='PasswordSubmit' />
+            <div>
+                <button onClick={StoreParams} className="button" type='submit' >Register</button>
+            </div>
+        </form>
+    )
+}
+export default RegistrationForm

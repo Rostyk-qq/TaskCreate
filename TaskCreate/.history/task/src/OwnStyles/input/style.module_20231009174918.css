@@ -1,0 +1,10 @@
+.input{
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    text-transform: capitalize;
+}
+.input::placeholder{
+    text
+}
