@@ -16,5 +16,5 @@ export const PrivateMassive: Massive[] = [
 ]
 
 export const PublicMassive: Massive[] = [
-    {path: PagesPath.POSTS, element: <Registration/>}
+    {path: PagesPath.REGISTRATION, element: <Registration/>}
 ]
